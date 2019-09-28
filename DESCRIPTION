@@ -1,6 +1,6 @@
 Package: completejourney
 Title: Retail Shopping Data
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: c(
   person("Brad", "Boehmke",
          email = "bradleyboehmke@gmail.com",
@@ -17,7 +17,7 @@ Description: Retail shopping transactions for 2,469 households over one year.
 License: CC0
 LazyData: true
 Depends: R (>= 2.10)
-Imports: dplyr, tibble, progress, stringr, zeallot
+Imports: curl, dplyr, tibble, progress, stringr, zeallot
 Suggests: lubridate, knitr, rmarkdown, testthat
 URL: https://github.com/bradleyboehmke/completejourney
 BugReports: https://github.com/bradleyboehmke/completejourney/issues
@@ -25,9 +25,9 @@ RoxygenNote: 6.1.1
 Encoding: UTF-8
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-08-21 14:10:09 UTC; b294776
+Packaged: 2019-09-28 18:16:00 UTC; b294776
 Author: Brad Boehmke [aut, cre] (<https://orcid.org/0000-0002-3611-8516>),
   Steven M. Mortimer [aut]
 Maintainer: Brad Boehmke <bradleyboehmke@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-08-23 09:00:02 UTC
+Date/Publication: 2019-09-28 18:30:02 UTC

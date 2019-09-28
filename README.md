@@ -3,11 +3,16 @@
 
 # completejourney
 
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/completejourney)](https://CRAN.R-project.org/package=completejourney)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/bradleyboehmke/completejourney.svg?branch=master)](https://travis-ci.org/bradleyboehmke/completejourney)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/bradleyboehmke/completejourney?branch=master&svg=true)](https://ci.appveyor.com/project/bradleyboehmke/completejourney)
+<!-- badges: end -->
 
 ## Overview
 
@@ -19,30 +24,31 @@ each household’s purchases, not just those from a limited number of
 categories. For certain households, demographic information as well as
 direct marketing contact history are included.
 
-  - `transactions_sample`: a sampling of the products purchased by
-    households
-  - `products`: product metadata (brand, description, etc.)
-  - `demographics`: household demographic data (age, income, family
-    size, etc.)
   - `campaigns`: campaigns received by each household
   - `campaign_descriptions`: campaign metadata (length of time active)
   - `coupons`: coupon metadata (UPC code, campaign, etc.)
   - `coupon_redemptions`: coupon redemptions (household, day, UPC code,
     campaign)
+  - `demographics`: household demographic data (age, income, family
+    size, etc.)
+  - `products`: product metadata (brand, description, etc.)
   - `promotions_sample`: a sampling of the product placement in mailers
     and in stores corresponding to advertising campaigns
+  - `transactions_sample`: a sampling of the products purchased by
+    households
 
 ## Installation
 
-You can install `completejourney` from GitHub with:
+``` r
+install.packages("completejourney")
+```
+
+To get a bug fix, or use a feature from the development version, you can
+install `completejourney` from GitHub with:
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("bradleyboehmke/completejourney")
-```
-
-``` r
-library(completejourney)
 ```
 
 ## Downloading full data sets
@@ -54,6 +60,8 @@ transactions data sets from the source GitHub repository with the
 following:
 
 ``` r
+library(completejourney)
+
 # get the full transactions data set
 transactions <- get_transactions()
 transactions

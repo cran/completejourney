@@ -4,7 +4,7 @@
 \name{promotions_sample}
 \alias{promotions_sample}
 \title{Sampling of the full promotions data set.}
-\format{A data frame with 1,948,597 rows and 5 variables
+\format{A data frame with 360,535 rows and 5 variables
 \itemize{
   \item product_id: Uniquely identifies each product
   \item store_id: Uniquely identifies each store
@@ -14,6 +14,12 @@
 }}
 \source{
 84.51°, Customer Journey study, \url{http://www.8451.com/area51/}
+}
+\usage{
+promotions_sample
+}
+\value{
+\item{promotions_sample}{a tibble}
 }
 \description{
 A sampling of the promotions data from the Complete Journey study signifying 
@@ -61,7 +67,7 @@ promotions_sample
 # Join promotions to transactions to analyze
 # product promotion/location
 require("dplyr")
-transactions \%>\%
+transactions_sample \%>\%
   left_join(promotions_sample,
             c("product_id", "store_id", "week"))
 }
@@ -70,3 +76,4 @@ transactions \%>\%
 Use \code{\link{get_promotions}} to download the entire promotions
   data containing all 20,940,529 rows.
 }
+\keyword{datasets}

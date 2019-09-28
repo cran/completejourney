@@ -18,6 +18,12 @@
 \source{
 84.51°, Customer Journey study, \url{http://www.8451.com/area51/}
 }
+\usage{
+demographics
+}
+\value{
+\item{demographics}{a tibble}
+}
 \description{
 Household demographic metadata for households participating in the Customer Journey study.
 Due to nature of the data, the demographic information is not available for all
@@ -30,8 +36,9 @@ demographics
 
 # Transaction line items that don't have household metadata
 require("dplyr")
-transactions \%>\%
+transactions_sample \%>\%
   anti_join(demographics, "household_id")
 }
 
 }
+\keyword{datasets}

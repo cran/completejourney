@@ -13,9 +13,6 @@
 #'   \item redemption_date: Date when the coupon was redeemed
 #' }
 #' 
-#' @docType data
-#' @name coupon_redemptions
-#' 
 #' @examples
 #' \donttest{
 #' # full data set
@@ -27,4 +24,4 @@
 #'   left_join(coupons, "coupon_upc")
 #' }
 #' @importFrom tibble tibble
-NULL
+"coupon_redemptions"

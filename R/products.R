@@ -17,7 +17,8 @@
 #' }
 #' 
 #' @docType data
-#' @name products
+#' @return \item{products}{a tibble}
+#' @keywords datasets
 #' 
 #' @examples
 #' \donttest{
@@ -26,8 +27,8 @@
 #'
 #' # Transaction line items that don't have product metadata
 #' require("dplyr")
-#' transactions %>%
+#' transactions_sample %>%
 #'   anti_join(products, "product_id")
 #' }
 #' @importFrom tibble tibble
-NULL
+"products"

@@ -13,12 +13,13 @@
 #' }
 #' 
 #' @docType data
-#' @name coupons
+#' @return \item{coupons}{a tibble}
+#' @keywords datasets
 #' 
 #' @examples
 #' \donttest{
 #' # full data set
-#' coupon
+#' coupons
 #'
 #' # Join product metadata to coupon dataset
 #' require("dplyr")
@@ -26,4 +27,4 @@
 #'   left_join(products, "product_id")
 #' }
 #' @importFrom tibble tibble
-NULL
+"coupons"

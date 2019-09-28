@@ -1,10 +1,21 @@
-## completejourney 1.0.0
+# completejourney 1.1.0 (2019-09-28)
 
-This package provides access to 8 datasets that cover retail shopping transactions for 2,469 
-households over one year. In addition to the transaction details, the datasets 
-contain 'metadata' on the products, coupons, campaigns, and promotions.
+## New features
 
-### Features
+  * Added an internet check with `curl::has_internet()` and condition handling to 
+    provide informative error when downloading online data sets.
+
+## Bug fixes
+
+  * Removed `^data$` from .Rbuildignore and only specified ignoring the .rds 
+    files. This resolved issue ([#14](https://github.com/bradleyboehmke/completejourney/issues/14)). 
+    As a consequence, the package was too large now that the build included the 
+    required data sets so I downsampled the `transactions_sample` and 
+    `promotions_sample` data sets.
+
+# completejourney 1.0.0 (2019-08-23)
+
+## New features
 
   * Add `completejourney` vignette to demonstrate basic usage (#1)
   * Add a pkgdown site as a web resource for the package (#3)
@@ -16,6 +27,6 @@ contain 'metadata' on the products, coupons, campaigns, and promotions.
   * Created importing capabilities so that large data sets do not need to be included
     in package (due to size).
 
-### Bug Fixes
+## Bug fixes
 
   * NONE

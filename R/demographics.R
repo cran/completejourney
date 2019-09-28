@@ -19,7 +19,8 @@
 #' }
 #' 
 #' @docType data
-#' @name demographics
+#' @return \item{demographics}{a tibble}
+#' @keywords datasets
 #' 
 #' @examples
 #' \donttest{
@@ -28,9 +29,9 @@
 #'
 #' # Transaction line items that don't have household metadata
 #' require("dplyr")
-#' transactions %>%
+#' transactions_sample %>%
 #'   anti_join(demographics, "household_id")
 #' }
 #' 
 #' @importFrom tibble tibble
-NULL
+"demographics"
