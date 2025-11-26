@@ -1,10 +1,10 @@
 #' @title Product metadata.
 #'
-#' @description 
+#' @description
 #' Product metadata for all products purchased by households participating in
 #' the Customer Journey study.
 #'
-#' @source 84.51°, Customer Journey study, \url{http://www.8451.com/area51/}
+#' @source 84.51°, Customer Journey study, \url{https://www.8451.com/area51/}
 #' @format A data frame with 92,331 rows and 7 variables
 #' \itemize{
 #' \item product_id: Uniquely identifies each product
@@ -15,11 +15,11 @@
 #' \item product_type: Groups similar products together at lowest level
 #' \item package_size: Indicates package size (not available for all products)
 #' }
-#' 
+#'
 #' @docType data
 #' @return \item{products}{a tibble}
 #' @keywords datasets
-#' 
+#'
 #' @examples
 #' \donttest{
 #' # full data set

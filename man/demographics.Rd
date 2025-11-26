@@ -4,7 +4,8 @@
 \name{demographics}
 \alias{demographics}
 \title{Household demographic metadata.}
-\format{A data frame with 801 rows and 8 variables
+\format{
+A data frame with 801 rows and 8 variables
 \itemize{
 \item household_id: Uniquely identifies each household
 \item age: Estimated age range
@@ -14,9 +15,10 @@
 \item household_size: Size of household up to 5+
 \item household_comp: Household composition description
 \item kids_count: Number of children present up to 3+
-}}
+}
+}
 \source{
-84.51°, Customer Journey study, \url{http://www.8451.com/area51/}
+84.51°, Customer Journey study, \url{https://www.8451.com/area51/}
 }
 \usage{
 demographics

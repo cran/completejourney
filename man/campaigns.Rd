@@ -4,13 +4,15 @@
 \name{campaigns}
 \alias{campaigns}
 \title{Campaigns to household data.}
-\format{A data frame with 6,589 rows and 2 variables
+\format{
+A data frame with 6,589 rows and 2 variables
 \itemize{
 \item campaign_id: Uniquely identifies each campaign; Ranges 1-27
 \item household_id: Uniquely identifies each household
-}}
+}
+}
 \source{
-84.51°, Customer Journey study, \url{http://www.8451.com/area51/}
+84.51°, Customer Journey study, \url{https://www.8451.com/area51/}
 }
 \usage{
 campaigns
